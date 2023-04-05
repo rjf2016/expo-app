@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { Text } from 'react-native';
 
 import TextInput from '@components/atoms/TextInput';
 import Button from '@components/atoms/Button';
@@ -25,13 +25,6 @@ const LoginForm = () => {
         placeholder="Password"
         onChangeText={(text) => setPassword(text)}
       />
-
-      {/* <TouchableOpacity
-        activeOpacity={0.5}
-        className="p-2.5 bg-rose-500 items-center rounded-lg shadow bg-rose mb-2"
-      >
-        <Text className="font-semi text-white/95">Login</Text>
-      </TouchableOpacity> */}
       <Button className="p-2.5 bg-rose-500 items-center rounded-lg shadow mb-2 hover:bg-rose-600 active:bg-rose-400">
         <Text className="font-semi text-white/95">Login</Text>
       </Button>
