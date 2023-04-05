@@ -1,13 +1,12 @@
-import React from 'react';
 import { registerRootComponent } from 'expo';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import './styles.css';
 
-import App from '@core/app';
+import App from '@core/App';
 
 const Root = () => {
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider className="bg-sky-200">
       <App />
     </SafeAreaProvider>
   );

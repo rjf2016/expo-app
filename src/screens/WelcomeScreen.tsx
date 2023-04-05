@@ -1,14 +1,11 @@
-import React from 'react';
-import { View } from 'react-native';
-
 import LoginForm from '@components/molecules/LoginForm';
+import Main from '@components/layouts/Main';
 
 function WelcomeScreen() {
   return (
-    <View className="text-center">
-      {/* <WelcomeHeader /> */}
+    <Main>
       <LoginForm />
-    </View>
+    </Main>
   );
 }
 export default WelcomeScreen;
