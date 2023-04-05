@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { View } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
@@ -30,7 +30,7 @@ const App = () => {
   }
 
   return (
-    <View className="flex-1" onLayout={onLayoutRootView}>
+    <View onLayout={onLayoutRootView}>
       <StatusBar style="auto" />
       <WelcomeScreen />
     </View>
